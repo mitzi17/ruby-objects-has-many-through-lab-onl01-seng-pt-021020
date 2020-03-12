@@ -20,7 +20,4 @@ class Genre
   def artists
     artists.all.collect { |song| song.artist = self}
   end
-  
-  
-  
 end
