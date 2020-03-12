@@ -24,4 +24,4 @@ class Patient
     Appointment.all.collect { |appt| appt.doctor == self }
   end
   
-  
+end
