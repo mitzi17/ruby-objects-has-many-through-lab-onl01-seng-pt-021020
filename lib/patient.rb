@@ -1,6 +1,6 @@
 class Patient
   
-  attr_accessor :name, :appointment, :doctor
+  attr_accessor :name
   
   @@all = [ ]
   
@@ -22,7 +22,7 @@ class Patient
   end
   
   def doctors
-    appointments.collect { |appt| appt.doctor }
+    appointments.map(&:doctor)
   end
   
 end
