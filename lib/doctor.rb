@@ -22,7 +22,7 @@ class Doctor
   end
   
   def patients
-    Appointment.all.collect { |appt| appt.patient == self }
+    appointments.all.collect { |appt| appt.patient == self }
   end
   
 end
